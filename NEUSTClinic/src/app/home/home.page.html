@@ -1,37 +1,35 @@
 <ion-header class="ion-no-border">
   <ion-toolbar>
-<ion-title class="ion-text-center">
-  NEUST CLINIC
-  </ion-title>
+    <ion-title class="ion-text-center topbar">NEUST CLINIC</ion-title>
   </ion-toolbar>
 </ion-header>
 
-
-
 <ion-content [fullscreen]="true">
-<div id="header">
-  <img src="assets/icon/NEUST.png" class="display" height="150 px" width="150 px">
-  <h1>Sign In</h1>
-</div>
-
-<ion-list inset>
-
-  <ion-item><ion-icon ios="ios-lock" md="md-lock"></ion-icon>
-    <ion-input type="text" placeholder="User Name" name="username"></ion-input>
-  </ion-item>
-  <br>
-  <ion-item>
-    <ion-input type="password" placeholder="Password" name="password"></ion-input>
-  </ion-item>
-
-</ion-list>
-
-<ion-label>Forgot Password?</ion-label>
-
-<div>
-<ion-button class="signin">Sign In</ion-button>
-</div>
-<div>
-  <ion-button class="signup">Sign Up</ion-button>
+  <div class="header">
+    <img src="assets/icon/NEUST.png" class="logo">
+    <h2 class="header-text">SIGN IN</h2>
   </div>
+
+  <div class="fields">
+    <ion-list inset lines="none">
+      <ion-item class="field">
+        <ion-icon name="person" class="field-icon"></ion-icon>
+        <ion-input type="text" placeholder="Username" name="username" class="username" no-lines></ion-input>
+      </ion-item>
+      <ion-item class="field">
+        <ion-icon name="lock-closed" class="field-icon"></ion-icon>
+        <ion-input type="password" placeholder="Password" name="password" class="password" no-lines></ion-input>
+        <ion-icon name="eye" class="show-password" id="show-password"></ion-icon>
+      </ion-item>
+      <ion-item>
+        <ion-label class="forgot-password">Forgot Password?</ion-label>
+      </ion-item>
+    </ion-list>
+  </div>
+
+  <div class="button-container">
+    <ion-button class="signin">Sign In</ion-button>
+    <ion-button class="signup">Sign Up</ion-button>
+  </div>
+
 </ion-content>
