@@ -1,0 +1,37 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+<ion-title class="ion-text-center">
+  NEUST CLINIC
+  </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content [fullscreen]="true">
+<div id="header">
+  <img src="assets/icon/NEUST.png" class="display" height="150 px" width="150 px">
+  <h1>Sign In</h1>
+</div>
+
+<ion-list inset>
+
+  <ion-item><ion-icon ios="ios-lock" md="md-lock"></ion-icon>
+    <ion-input type="text" placeholder="User Name" name="username"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input type="password" placeholder="Password" name="password"></ion-input>
+  </ion-item>
+
+</ion-list>
+
+<ion-label>Forgot Password?</ion-label>
+ 
+<div>
+<ion-button class="signin">Sign In</ion-button>
+</div>
+<div>
+  <ion-button class="signup">Sign Up</ion-button>
+  </div>
+</ion-content>

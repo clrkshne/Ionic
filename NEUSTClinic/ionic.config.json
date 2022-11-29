@@ -1,0 +1,7 @@
+{
+  "name": "NEUSTClinic",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
