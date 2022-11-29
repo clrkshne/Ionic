@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { ToastController } from '@ionic/angular';
 
 @Component({
   selector: 'app-signup',
@@ -7,9 +9,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SignupPage implements OnInit {
 
-  constructor() { }
+  constructor(
+    private router:Router, private ToastController:ToastController
+  ) {}
 
   ngOnInit() {
   }
 
+
+
+  async success()
+  {
+    const toast = await this.ToastController.create({
+      message: "You have successfully signed up! Please wait for your approval by the administrator.",
+      duration: 3000,
+      color: "success",
+      position: 'bottom',
+
+  });
+    toast.present();
+  }
 }
