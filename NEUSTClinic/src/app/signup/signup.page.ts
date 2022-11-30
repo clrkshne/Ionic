@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
 import { ToastController } from '@ionic/angular';
 
 @Component({
@@ -10,7 +9,7 @@ import { ToastController } from '@ionic/angular';
 export class SignupPage implements OnInit {
 
   constructor(
-    private router:Router, private ToastController:ToastController
+    private ToastController:ToastController
   ) {}
 
   ngOnInit() {
