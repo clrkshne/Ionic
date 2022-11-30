@@ -8,11 +8,11 @@
     </ion-toolbar>
   </ion-header>
   <ion-content class="ion-padding">
-    <ion-button expand="full">Dashboard</ion-button>
-    <ion-button expand="full">Masterlist</ion-button>
-    <ion-button expand="full">Verification</ion-button>
-    <ion-button expand="full">Reports</ion-button>
-    <ion-button expand="full">Log out</ion-button>
+    <ion-button expand="full" (click)="admindashboard()">Dashboard</ion-button>
+    <ion-button expand="full" (click)="masterlist()">Masterlist</ion-button>
+    <ion-button expand="full" (click)="verification()">Verification</ion-button>
+    <ion-button expand="full" (click)="reports()">Reports</ion-button>
+    <ion-button expand="full" (click)="adminsignin()">Log out</ion-button>
     </ion-content>
 </ion-menu>
 <div class="ion-page" id="main-content">
@@ -26,6 +26,6 @@
     </ion-toolbar>
   </ion-header>
   <ion-content class="ion-padding">
-    Dashboard
+    Master List
   </ion-content>
 </div>

@@ -2,17 +2,16 @@
       <ion-header>
         <ion-toolbar>
           <ion-menu-toggle>
-            <ion-button><ion-icon name="close"></ion-icon></ion-button>
+            <ion-button><ion-icon name="close"></ion-icon></ion-button><ion-title>Menu Content</ion-title>
           </ion-menu-toggle>
-          <ion-title>Menu Content</ion-title>
+          
         </ion-toolbar>
       </ion-header>
       <ion-content class="ion-padding">
-        <ion-button expand="full">Dashboard</ion-button>
-        <ion-button expand="full">Masterlist</ion-button>
-        <ion-button expand="full">Verification</ion-button>
-        <ion-button expand="full">Reports</ion-button>
-        <ion-button expand="full">Log out</ion-button>
+        <ion-button expand="full"><ion-icon name="person"></ion-icon>&nbsp;Profile</ion-button>
+        <ion-button expand="full"><ion-icon name="flask"></ion-icon>&nbsp;Lab Procedures</ion-button>
+        <ion-button expand="full"><ion-icon name="duplicate"></ion-icon>&nbsp;Treatment Record</ion-button>
+        <ion-button expand="full" (click)="logoutalert()"><ion-icon name="exit"></ion-icon></ion-button>
         </ion-content>
     </ion-menu>
     <div class="ion-page" id="main-content">
@@ -22,10 +21,10 @@
             <ion-menu-button></ion-menu-button>
           </ion-buttons>
           
-          <ion-title>DASHBOARD</ion-title>
+          <ion-title>STUDENT DASHBOARD</ion-title>
         </ion-toolbar>
       </ion-header>
       <ion-content class="ion-padding">
-        Dashboard
+        Student Dashboard
       </ion-content>
     </div>

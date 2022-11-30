@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 @Component({
-  selector: 'app-masterlist',
-  templateUrl: './masterlist.page.html',
-  styleUrls: ['./masterlist.page.scss'],
+  selector: 'app-admindashboard',
+  templateUrl: './admindashboard.page.html',
+  styleUrls: ['./admindashboard.page.scss'],
 })
-export class MasterlistPage implements OnInit {
+export class AdmindashboardPage implements OnInit {
 
-  constructor(private router:Router) { }
+  constructor( private router:Router) { }
 
   ngOnInit() {
   }
