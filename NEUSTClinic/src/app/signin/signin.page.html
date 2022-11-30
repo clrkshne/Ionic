@@ -1,9 +1,31 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>signin</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content>
-
-</ion-content>
+    <ion-menu contentId="main-content">
+      <ion-header>
+        <ion-toolbar>
+          <ion-menu-toggle>
+            <ion-button><ion-icon name="close"></ion-icon></ion-button>
+          </ion-menu-toggle>
+          <ion-title>Menu Content</ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content class="ion-padding">
+        <ion-button expand="full">Dashboard</ion-button>
+        <ion-button expand="full">Masterlist</ion-button>
+        <ion-button expand="full">Verification</ion-button>
+        <ion-button expand="full">Reports</ion-button>
+        <ion-button expand="full">Log out</ion-button>
+        </ion-content>
+    </ion-menu>
+    <div class="ion-page" id="main-content">
+      <ion-header>
+        <ion-toolbar>
+          <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+          </ion-buttons>
+          
+          <ion-title>DASHBOARD</ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content class="ion-padding">
+        Dashboard
+      </ion-content>
+    </div>

@@ -19,6 +19,18 @@ const routes: Routes = [
     path: 'signin',
     loadChildren: () => import('./signin/signin.module').then( m => m.SigninPageModule)
   },
+  {
+    path: 'masterlist',
+    loadChildren: () => import('./masterlist/masterlist.module').then( m => m.MasterlistPageModule)
+  },
+  {
+    path: 'verification',
+    loadChildren: () => import('./verification/verification.module').then( m => m.VerificationPageModule)
+  },
+  {
+    path: 'reports',
+    loadChildren: () => import('./reports/reports.module').then( m => m.ReportsPageModule)
+  },
 ];
 
 @NgModule({
