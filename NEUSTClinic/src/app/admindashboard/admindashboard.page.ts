@@ -40,4 +40,8 @@ export class AdmindashboardPage implements OnInit {
   {
     this.router.navigate(['profile4'])
   }
+  medcert()
+  {
+    this.router.navigate(['medcert'])
+  }
 }
