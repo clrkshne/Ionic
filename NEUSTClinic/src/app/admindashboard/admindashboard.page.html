@@ -1,15 +1,15 @@
 <ion-menu contentId="main-content">
   <ion-header>
-    <ion-toolbar>
+    <ion-toolbar color="primary">
       <ion-menu-toggle>
         <ion-button><ion-icon name="close"></ion-icon></ion-button>
       </ion-menu-toggle>
       <ion-title></ion-title>
     </ion-toolbar>
   </ion-header>
-  <ion-content class="ion-padding">
+  <ion-content class="ion-padding" color="primary">
     <ion-button expand="full" (click)="admindashboard()">Dashboard</ion-button>
-    <ion-button expand="full" (click)="masterlist()">Masterlist</ion-button>
+    <ion-button expand="full" (click)="masterlist()">Master List</ion-button>
     <ion-button expand="full" (click)="verification()">Verification</ion-button>
     <ion-button expand="full" (click)="reports()">Reports</ion-button>
     <ion-button expand="full" (click)="adminsignin()">Log out</ion-button>
@@ -17,15 +17,17 @@
 </ion-menu>
 <div class="ion-page" id="main-content">
   <ion-header>
-    <ion-toolbar>
+    <ion-toolbar color="primary" class="toolbar1">
       <ion-buttons slot="start">
         <ion-menu-button></ion-menu-button>
       </ion-buttons>
 
       <ion-title>Dashboard</ion-title>
+
+      <ion-title class="dashboard1"><b>DASHBOARD</b></ion-title>
     </ion-toolbar>
-    <ion-toolbar>
-      <ion-title>Dashboard</ion-title>
+    <ion-toolbar class="toolbar2">
+      <ion-title class="dashboard2">Dashboard</ion-title>
     </ion-toolbar>
   </ion-header>
   <ion-content class="ion-padding">

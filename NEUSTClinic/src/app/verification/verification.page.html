@@ -1,15 +1,15 @@
 <ion-menu contentId="main-content">
   <ion-header>
-    <ion-toolbar>
+    <ion-toolbar color="primary">
       <ion-menu-toggle>
         <ion-button><ion-icon name="close"></ion-icon></ion-button>
       </ion-menu-toggle>
-      <ion-title>Menu Content</ion-title>
+      <ion-title></ion-title>
     </ion-toolbar>
   </ion-header>
-  <ion-content class="ion-padding">
+  <ion-content class="ion-padding" color="primary">
     <ion-button expand="full" (click)="admindashboard()">Dashboard</ion-button>
-    <ion-button expand="full" (click)="masterlist()">Masterlist</ion-button>
+    <ion-button expand="full" (click)="masterlist()">Master List</ion-button>
     <ion-button expand="full" (click)="verification()">Verification</ion-button>
     <ion-button expand="full" (click)="reports()">Reports</ion-button>
     <ion-button expand="full" (click)="adminsignin()">Log out</ion-button>
@@ -17,15 +17,54 @@
 </ion-menu>
 <div class="ion-page" id="main-content">
   <ion-header>
-    <ion-toolbar>
+    <ion-toolbar color="primary" class="toolbar1">
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      
+      <ion-title class="dashboard1">Verification</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+<div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar color="primary">
       <ion-buttons slot="start">
         <ion-menu-button></ion-menu-button>
       </ion-buttons>
       
       <ion-title>Verification</ion-title>
+      
     </ion-toolbar>
+    
   </ion-header>
-  <ion-content class="ion-padding">
-    Verification
-  </ion-content>
+  
 </div>
+
+<table id="customers">
+  <ion-button color="medium">CSV</ion-button>
+  <ion-button color="medium">PDF</ion-button>
+  <ion-button color="medium">Print</ion-button>
+  <ion-button color="medium">Column Visibility</ion-button>
+
+  <tr>
+    <th>ID Number</th>
+    <th>Name</th>
+    <th>Age</th>
+    <th>Gender</th>
+    <th>Course</th>
+    <th>School Year</th>
+    <th>Actions</th>
+  </tr>
+  <tr>
+    <td>420183245</td>
+    <td>Clark Shane A. Vicencio</td>
+    <td>21</td>
+    <td>Male</td>
+    <td>BSIT</td>
+    <td>2022</td>
+    <td><ion-button color="success"><ion-icon name="checkmark-outline"></ion-icon></ion-button><ion-button color="danger"><ion-icon name="close-outline"></ion-icon></ion-button></td>
+  
+  </tr>
+ 
+</table>

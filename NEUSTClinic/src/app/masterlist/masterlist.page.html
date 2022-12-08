@@ -1,15 +1,15 @@
 <ion-menu contentId="main-content">
   <ion-header>
-    <ion-toolbar>
+    <ion-toolbar color="primary">
       <ion-menu-toggle>
         <ion-button><ion-icon name="close"></ion-icon></ion-button>
       </ion-menu-toggle>
       <ion-title></ion-title>
     </ion-toolbar>
   </ion-header>
-  <ion-content class="ion-padding">
+  <ion-content class="ion-padding" color="primary">
     <ion-button expand="full" (click)="admindashboard()">Dashboard</ion-button>
-    <ion-button expand="full" (click)="masterlist()">Masterlist</ion-button>
+    <ion-button expand="full" (click)="masterlist()">Master List</ion-button>
     <ion-button expand="full" (click)="verification()">Verification</ion-button>
     <ion-button expand="full" (click)="reports()">Reports</ion-button>
     <ion-button expand="full" (click)="adminsignin()">Log out</ion-button>
@@ -17,15 +17,47 @@
 </ion-menu>
 <div class="ion-page" id="main-content">
   <ion-header>
-    <ion-toolbar>
+    <ion-toolbar color="primary" class="toolbar1">
       <ion-buttons slot="start">
         <ion-menu-button></ion-menu-button>
       </ion-buttons>
       
-      <ion-title>Master List</ion-title>
+      <ion-title class="masterlist1"><b>Master List</b></ion-title>
     </ion-toolbar>
   </ion-header>
-  <ion-content class="ion-padding">
-    Master List
-  </ion-content>
-</div>
+
+  <ion-content>
+  <ion-button color="medium">CSV</ion-button>
+  <ion-button color="medium">PDF</ion-button>
+  <ion-button color="medium">Print</ion-button>
+  <ion-button color="medium">Column Visibility</ion-button>
+
+<input placeholder="Search...">
+
+  <table class="GeneratedTable">
+    <thead>
+      <tr>
+        <th>Header</th>
+        <th>Header</th>
+        <th>Header</th>
+        <th>Header</th>
+        <th>Header</th>
+        <th>Header</th>
+        <th>Header</th>
+        <th>Header</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+      </tr>
+    </tbody>
+  </table>
+</ion-content>
