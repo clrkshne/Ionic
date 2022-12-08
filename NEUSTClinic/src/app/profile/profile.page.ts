@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { ToastController } from '@ionic/angular';
+
 @Component({
   selector: 'app-profile',
   templateUrl: './profile.page.html',
@@ -7,7 +9,7 @@ import { Router } from '@angular/router';
 })
 export class ProfilePage implements OnInit {
 
-  constructor(private router:Router
+  constructor(private router:Router,private ToastController:ToastController
   ) {}
 
   ngOnInit() {
@@ -15,5 +17,16 @@ export class ProfilePage implements OnInit {
   masterlist()
   {
     this.router.navigate(['masterlist'])
+  }
+  async success()
+  {
+    const toast = await this.ToastController.create({
+      message: "User update successfully",
+      duration: 3000,
+      color: "danger",
+      position: 'top',
+
+  });
+    toast.present();
   }
 }

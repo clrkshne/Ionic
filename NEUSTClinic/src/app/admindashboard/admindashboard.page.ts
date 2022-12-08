@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { ToastController } from '@ionic/angular';
+
 @Component({
   selector: 'app-admindashboard',
   templateUrl: './admindashboard.page.html',
@@ -7,7 +9,7 @@ import { Router } from '@angular/router';
 })
 export class AdmindashboardPage implements OnInit {
 
-  constructor( private router:Router) { }
+  constructor( private router:Router, private ToastController:ToastController) { }
 
   ngOnInit() {
   }
@@ -43,5 +45,27 @@ export class AdmindashboardPage implements OnInit {
   medcert()
   {
     this.router.navigate(['medcert'])
+  } 
+    async download()
+  {
+    const toast = await this.ToastController.create({
+      message: "Downloaded Successfully",
+      duration: 3000,
+      color: "success",
+      position: 'top',
+
+  });
+    toast.present();
+  }
+  async print()
+  {
+    const toast = await this.ToastController.create({
+      message: "Printed Successfully",
+      duration: 3000,
+      color: "success",
+      position: 'top',
+
+  });
+    toast.present();
   }
 }
