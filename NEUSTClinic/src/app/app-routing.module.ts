@@ -63,6 +63,10 @@ const routes: Routes = [
     path: 'profile6',
     loadChildren: () => import('./profile6/profile6.module').then( m => m.Profile6PageModule)
   },
+  {
+    path: 'medcert',
+    loadChildren: () => import('./medcert/medcert.module').then( m => m.MedcertPageModule)
+  },
 ];
 
 @NgModule({

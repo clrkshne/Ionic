@@ -32,4 +32,12 @@ export class AdmindashboardPage implements OnInit {
   {
     this.router.navigate(['adminsignin'])
   }
+  profile6()
+  {
+    this.router.navigate(['profile6'])
+  }
+  profile4()
+  {
+    this.router.navigate(['profile4'])
+  }
 }
