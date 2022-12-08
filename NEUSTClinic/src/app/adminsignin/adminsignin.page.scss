@@ -1,74 +1,93 @@
 * {
-    margin: 0;
-    padding: 0%;
-    box-sizing: border-box;
-  }
-  
-  .topbar {
-    background-color: inherit;
-    font-size: 24px;
-  }
-  
-  .header {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .logo {
-    width: 130px;
-    aspect-ratio: 1;
-    margin: 3rem auto 2rem auto;
-  }
-  
-  .header-text {
-    margin: 0 auto;
-  }
-  
-  .fields {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .field {
-    width: 80%;
-    margin: 1rem auto;
-    border: 1px solid #d3d1d1;
-    padding: 0;
-  }
-  
-  .field-icon {
-    font-size: 1.2rem;
-    padding: 0 1rem 0 0;
-    color: #d3d1d1;
-  }
-  
-  .show-password {
-    font-size: 1.2rem;
-    padding: 0 0 0 1rem;
-    color: #d3d1d1;
-  }
-  
-  .username,
-  .password {
-    padding-left: 1rem;
-  }
-  
-  .forgot-password {
-    padding-left: 1rem;
-  }
-  
-  .button-container {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .signin,
-  .signup1 {
-    width: 250px;
-    margin: .5rem auto;
-  }
-  
-  .reset {
-    font-size: 15px;
-    text-align: center;
-  }
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+.header-container {
+  display: flex;
+  height: 3rem;
+  padding: 1rem 0;
+  align-items: center;
+}
+
+.topbar {
+  background-color: inherit;
+  font-size: 24px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+  border-bottom: 1px solid #e6e6e6;
+  margin: 0 1rem;
+  margin-top: 3rem;
+}
+
+.logo {
+  width: 30px;
+  height: 30px;
+  margin: 0 1rem;
+}
+
+.header-text {
+  margin: 3rem auto 2rem auto;
+  font-size: 1.8rem;
+}
+
+.fields {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.field {
+  width: 80%;
+  margin: 1rem auto;
+  border: 1px solid #d3d1d1;
+  padding: 0;
+}
+
+.field-icon {
+  font-size: 1.2rem;
+  padding: 0 1rem 0 0;
+  color: #d3d1d1;
+}
+
+.show-password {
+  font-size: 1.2rem;
+  padding: 0 0 0 1rem;
+  color: #d3d1d1;
+}
+
+.username,
+.password {
+  padding-left: 1rem;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.signin {
+  width: 80%;
+  margin: .5rem auto;
+}
+
+.signup1 {
+  margin-left: 3rem;
+  height: 2rem;
+  width: 5rem;
+}
+
+ion-list > .field {
+  width: 90%;
+  margin: 2rem auto;
+}
+
+.forgot-password {
+  color: #0275d8;
+}

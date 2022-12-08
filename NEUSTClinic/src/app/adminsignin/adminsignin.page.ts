@@ -16,4 +16,8 @@ export class AdminsigninPage implements OnInit {
   {
     this.router.navigate(['admindashboard'])
   }
+  home()
+  {
+    this.router.navigate(['home'])
+  }
 }
