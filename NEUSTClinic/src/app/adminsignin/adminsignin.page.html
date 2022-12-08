@@ -1,35 +1,31 @@
-<ion-header class="ion-no-border">
-  <ion-toolbar>
-    <ion-title class="ion-text-center topbar">NEUST CLINIC</ion-title>
-  </ion-toolbar>
+<ion-header class="ion-no-border header-container">
+  <img src="assets/icon/NEUST.png" class="logo" (click)="home()">
+  <h1 class="topbar">NEUST CLINIC</h1>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <div class="header">
-    <img src="assets/icon/NEUST.png" class="logo">
-    <h2 class="header-text">SIGN IN</h2>
-    <h3 class="header-text">(Admin)</h3>
-  </div>
-
-  <div class="fields">
-    <ion-list inset lines="none">
-      <ion-item class="field">
-        <ion-icon name="person" class="field-icon"></ion-icon>
-        <ion-input type="text" placeholder="Username" name="username" class="username" no-lines></ion-input>
-      </ion-item>
-      <ion-item class="field">
-        <ion-icon name="lock-closed" class="field-icon"></ion-icon>
-        <ion-input type="password" placeholder="Password" name="password" class="password" no-lines></ion-input>
-        <ion-icon name="eye" class="show-password" id="show-password"></ion-icon>
-      </ion-item>
-
-    </ion-list>
-  </div>
-
-  <div class="button-container">
-    <ion-button class="signin" (click)="admindashboard()">Sign In</ion-button>
-  </div>
-  <div class="ion-text-center">
-  <ion-label>NEUST Student? Click Here.</ion-label>
+<div class="header">
+  <h2 class="header-text">Sign In<br/>(Admin)</h2>
 </div>
+
+<div class="fields">
+  <ion-list inset lines="none">
+    <ion-item class="field">
+      <ion-icon name="person" class="field-icon"></ion-icon>
+      <ion-input type="text" placeholder="Username" name="username" class="username" no-lines></ion-input>
+    </ion-item>
+    <ion-item class="field">
+      <ion-icon name="lock-closed" class="field-icon"></ion-icon>
+      <ion-input type="password" placeholder="Password" name="password" class="password" no-lines></ion-input>
+      <ion-icon name="eye" class="show-password" id="show-password"></ion-icon>
+    </ion-item>
+  </ion-list>
+</div>
+
+<div class="button-container">
+  <ion-button (click)="admindashboard()" class="signin">Sign In</ion-button>
+  <ion-label (click)="home()" class="forgot-password" style="margin-top: 2rem; margin-left: 2rem;">NEUST student? click here.</ion-label>
+</div>
+
+
 </ion-content>
