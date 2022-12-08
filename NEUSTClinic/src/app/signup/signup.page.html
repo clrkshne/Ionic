@@ -10,209 +10,157 @@
 <h1>Personal Information</h1>
 <ion-icon name="person-circle-sharp" color="medium"></ion-icon>
 
-<ion-list>
-  <ion-item>
-    <ion-label position="stacked">*Student Number</ion-label>
-    <ion-input></ion-input>
-  </ion-item>
+<form>
+    <label>*Student Number</label>
+    <input>
+ 
+    <label>*Username</label>
+    <input>
 
-  <ion-item>
-    <ion-label position="stacked">*Username</ion-label>
-    <ion-input></ion-input>
-  </ion-item>
+    <label>*Password</label>
+    <input type="password">
 
-  <ion-item>
-    <ion-label position="stacked">*Password</ion-label>
-    <ion-input></ion-input>
-  </ion-item>
+    <label>*Repeat Password</label>
+    <input type="password">
 
-  <ion-item>
-    <ion-label position="stacked">*Repeat Password</ion-label>
-    <ion-input></ion-input>
-  </ion-item>
+    <label>*First Name</label>
+    <input>
 
-  <ion-item>
-    <ion-label position="stacked">*First Name</ion-label>
-    <ion-input></ion-input>
-  </ion-item>
+    <label>*Middle Name</label>
+    <input>
+ 
+    <label>*Last Name</label>
+    <input>
 
-  <ion-item>
-    <ion-label position="stacked">*Middle Name</ion-label>
-    <ion-input></ion-input>
-  </ion-item>
+    <label>*Suffix (Leave empty if not applicable)</label>
+    <input>
 
-  <ion-item>
-    <ion-label position="stacked">*Last Name</ion-label>
-    <ion-input></ion-input>
-  </ion-item>
-
-  <ion-item>
-    <ion-label position="stacked">*Suffix (Leave empty if not applicable.)</ion-label>
-    <ion-input></ion-input>
-  </ion-item>
 
   <ion-item>
     <ion-label position="stacked">*Birthdate</ion-label>
-    <ion-input type="date"></ion-input>
+    <input type="date" value="dd/mm/yyyy">
   </ion-item>
 
 
     <ion-item>
-      <ion-label position="stacked">Gender</ion-label>
-      <ion-select interface="popover" placeholder="Gender">
-        <ion-select-option value="male">Male</ion-select-option>
-        <ion-select-option value="female">Female</ion-select-option>
-      </ion-select>
+      <label for="gender">*Gender</label>
+      <select name="gender" id="gender">
+        <option value="gender">Gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
     </ion-item>
 
+    <ion-item>
+      <label for="religion">*Religion</label>
+      <select name="religion" id="religion">
+        <option value="religion">Religion</option>
+        <option value="catholic">Roman Catholic</option>
+        <option value="inc">Iglesia ni Cristo</option>
+        <option value="islam">Islam</option>
+        <option value="jwit">Jehovah's Witnesses</option>
+        <option value="bap">Bible Baptist Church</option>
+        <option value="mor">Mormon</option>
+        <option value="born">Born Again</option>
+      </select>
+    </ion-item>
 
-  <ion-item>
-    <ion-label>*Religion</ion-label>
-    <ion-select interface="popover" placeholder="Religion">
-      <ion-select-option value="religion">Religion</ion-select-option>
-      <ion-select-option value="catholic">Roman Catholic</ion-select-option>
-      <ion-select-option value="inc">Iglesia Ni Cristo</ion-select-option>
-      <ion-select-option value="islam">Islam</ion-select-option>
-      <ion-select-option value="jwit">Jehovah's Witnesses</ion-select-option>
-      <ion-select-option value="bap">Bible Baptist Church</ion-select-option>
-      <ion-select-option value="mor">Mormon</ion-select-option>
-      <ion-select-option value="born">Born Again</ion-select-option>
-    </ion-select>
-  </ion-item>
+    <ion-item>
+      <label for="course">*Course</label>
+      <select name="course" id="course">
+        <option value="course">Course</option>
+        <option value="bsit">BSIT</option>
+        <option value="bsed">BSED</option>
+        <option value="bse">BSE</option>
+        <option value="bsa">BSA</option>
+      </select>
+    </ion-item>
 
-  <ion-item>
-    <ion-label>*Course</ion-label>
-    <ion-select interface="popover" placeholder="Course">
-      <ion-select-option value="course">Course</ion-select-option>
-      <ion-select-option value="bsit">BSIT</ion-select-option>
-      <ion-select-option value="bsed">BSED</ion-select-option>
-      <ion-select-option value="bse">BSE</ion-select-option>
-      <ion-select-option value="bsba">BSBA</ion-select-option>
-      </ion-select>
-  </ion-item>
+    <ion-item>
+      <label for="yearlevel">*Year Level</label>
+      <select name="yearlevel" id="yearlevel">
+        <option value="course">Year Level</option>
+        <option value="bsit">1st</option>
+        <option value="bsed">2nd</option>
+        <option value="bse">3rd</option>
+        <option value="bsa">4th</option>
+      </select>
+    </ion-item>
 
-  <ion-item>
-    <ion-label>*Year Level</ion-label>
-    <ion-select interface="popover" placeholder="Year Level">
-      <ion-select-option value="course">Year Level</ion-select-option>
-      <ion-select-option value="1st">1st</ion-select-option>
-      <ion-select-option value="2nd">2nd</ion-select-option>
-      <ion-select-option value="3rd">3rd</ion-select-option>
-      <ion-select-option value="4th">4th</ion-select-option>
-      </ion-select>
-  </ion-item>
+    <label>*Schoolyear</label>
+    <input>
 
-  <ion-item>
-    <ion-label position="stacked">*School Year</ion-label>
-    <ion-input></ion-input>
-  </ion-item>
+    <h1>Contact</h1>
 
-  <h1>Contact</h1>
+    <label>*Contact</label>
+    <input>
 
-  <ion-item>
-    <ion-label position="stacked">*Contact</ion-label>
-    <ion-input></ion-input>
-  </ion-item>
+    <label>*Email</label>
+    <input>
 
-  <ion-item>
-    <ion-label position="stacked">*Email</ion-label>
-    <ion-input></ion-input>
-  </ion-item>
+    <label>*Cellphone Number (Parents/Guardians)</label>
+    <input>
 
-  <ion-item>
-    <ion-label position="stacked">*Cellphone Number (Parents/Guardians)</ion-label>
-    <ion-input></ion-input>
-  </ion-item>
+    <h1>Family</h1>
 
-  <h1>Family</h1>
-  <ion-item>
-    <ion-label position="stacked">*Father</ion-label>
-    <ion-input></ion-input>
-  </ion-item>
+    <label>*Father</label>
+    <input>
 
-  <ion-item>
-    <ion-label position="stacked">*Occupation</ion-label>
-    <ion-input></ion-input>
-  </ion-item>
+    <label>*Occupation</label>
+    <input>
+    
+    <label>*Mother</label>
+    <input>
 
-  <ion-item>
-    <ion-label position="stacked">*Mother</ion-label>
-    <ion-input></ion-input>
-  </ion-item>
+    <label>*Occupation</label>
+    <input>
 
-  <ion-item>
-    <ion-label position="stacked">*Occupation</ion-label>
-    <ion-input></ion-input>
-  </ion-item>
+    <h1>Address</h1>
 
-  <h1>Address</h1>
+    <label>*House Number</label>
+    <input>
 
-  <ion-item>
-    <ion-label position="stacked">*House Number</ion-label>
-    <ion-input></ion-input>
-  </ion-item>
+    <label>*Street</label>
+    <input>
 
-  <ion-item>
-    <ion-label position="stacked">*Street</ion-label>
-    <ion-input></ion-input>
-  </ion-item>
+    <label>*City/Municipality</label>
+    <input>
 
-  <ion-item>
-    <ion-label position="stacked">*City/Municipality</ion-label>
-    <ion-input></ion-input>
-  </ion-item>
+    <label>*Province</label>
+    <input>
 
-  <ion-item>
-    <ion-label position="stacked">*Province</ion-label>
-    <ion-input></ion-input>
-  </ion-item>
+    <h1>Additional Information</h1>
+    <h2>(Leave empty if not applicable.)</h2>
 
-  <h1>Additional Information</h1>
-  <ion-label>(Leave empty if not applicable.)</ion-label>
+    <label>*Height (cm)</label>
+    <input>
 
-  <ion-item>
-    <ion-label position="stacked">*Height (cm)</ion-label>
-    <ion-input></ion-input>
-  </ion-item>
-  
-  <ion-item>
-    <ion-label position="stacked">*Weight (kg)</ion-label>
-    <ion-input></ion-input>
-  </ion-item>
+    <label>*Weight (kg)</label>
+    <input>
 
-  <h1>If you have chronic Illness (Diabetes, Seizures, Asthma) please give details:</h1>
+    <h1>If you have chronic illnesses (Diabetes, Seizures, Asthma) please give details:</h1>
 
-  
-  <ion-item>
-    <ion-label position="stacked">*Illness</ion-label>
-    <ion-input></ion-input>
-  </ion-item>
-  
-  <ion-item>
-    <ion-label position="stacked">*Age of Diagnosis</ion-label>
-    <ion-input></ion-input>
-  </ion-item>
+    <label>*Illness</label>
+    <input>
 
-  <h1>Present Medication and Schedule: (Kasalukuyang iniinom na mga gamot)</h1>
-  <ion-input></ion-input>
+    <label>*Age at Diagnosis</label>
+    <input>
 
-  <ion-item>
-    <ion-label position="stacked">*Doctor's Name</ion-label>
-    <ion-input></ion-input>
-  </ion-item>
+    <label>*Present Medication and Schedule: (Kasalukuyang iniinom na mga gamot)</label>
+    <input>
 
-  <ion-item>
-    <ion-label position="stacked">*Clinic Address</ion-label>
-    <ion-input></ion-input>
-  </ion-item>
+    <label>*Doctor's Name</label>
+    <input>
 
-  <ion-item>
-    <ion-label position="stacked">*Telephone Number</ion-label>
-    <ion-input></ion-input>
-  </ion-item>
+    <label>*Clinic Address</label>
+    <input>
 
+    <label>*Telephone Number</label>
+    <input>
+
+  </form>
   <ion-button (click)="success()">Sign Up</ion-button>
-</ion-list>
+
 
 
 </ion-content>
