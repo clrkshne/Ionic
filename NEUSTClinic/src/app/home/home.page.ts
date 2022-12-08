@@ -9,6 +9,11 @@ export class HomePage {
 
   constructor(private router:Router) {}
 
+adminsignin()
+{
+  this.router.navigate(['adminsignin'])
+}
+
 signup()
 {
   this.router.navigate(['signup'])

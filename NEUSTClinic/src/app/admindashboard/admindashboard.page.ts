@@ -11,6 +11,7 @@ export class AdmindashboardPage implements OnInit {
 
   ngOnInit() {
   }
+
   admindashboard()
   {
     this.router.navigate(['admindashboard'])
