@@ -4,7 +4,7 @@
           <ion-menu-toggle>
             <ion-button><ion-icon name="close"></ion-icon></ion-button><ion-title>Menu Content</ion-title>
           </ion-menu-toggle>
-          
+
         </ion-toolbar>
       </ion-header>
       <ion-content class="ion-padding">
@@ -20,25 +20,27 @@
           <ion-buttons slot="start">
             <ion-menu-button></ion-menu-button>
           </ion-buttons>
-          
+
           <ion-title>STUDENT DASHBOARD</ion-title>
         </ion-toolbar>
       </ion-header>
       <ion-content class="ion-padding">
 
-    
-         <img class="circle-pic" 
-         src="assets/icon/DP.png"/>
-         <img class="camera-icon" 
-         src="assets/icon/icon-camera.png"/>
 
-         <ion-button shape="round">Upload</ion-button>
-
-         <div>
-          <h1 class="ion-text-center">Personal Information</h1>
+         <div class="d-flex flex-column">
+            <div class="img-div">
+              <img class="circle-pic" src="assets/icon/DP.png"/>
+              <img class="camera-icon" src="assets/icon/icon-camera.png"/>
+            </div>
+            <div class="btn-container">
+              <ion-button shape="round" class="upload-btn">Upload</ion-button>
+            </div>
          </div>
 
          <ion-list>
+
+          <h1>Personal Information</h1>
+
          <ion-item>
           <ion-label position="stacked">Username</ion-label>
           <ion-input></ion-input>
@@ -81,7 +83,7 @@
               <ion-select-option value="female">Female</ion-select-option>
             </ion-select>
           </ion-item>
-    
+
 
   <ion-item>
     <ion-label>Religion</ion-label>
@@ -196,7 +198,7 @@
     <ion-label position="stacked">Height (cm)</ion-label>
     <ion-input></ion-input>
   </ion-item>
-  
+
   <ion-item>
     <ion-label position="stacked">Weight (kg)</ion-label>
     <ion-input></ion-input>
@@ -240,10 +242,9 @@
 
       <ion-button shape="round">Update</ion-button>
 
-   
+
       </div>
 
-    
+
       </ion-content>
 
-  
