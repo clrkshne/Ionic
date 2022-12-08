@@ -1,9 +1,48 @@
-<ion-header>
+<ion-header class="ion-no-border">
   <ion-toolbar>
-    <ion-title>medcert</ion-title>
+      <ion-img src="assets/icon/NEUST LOGO.png/"></ion-img>
+      <ion-button class="ion-text-end" slot="end" (click)="admindashboard()">
+        <ion-icon name="arrow-back-outline"></ion-icon>
+      </ion-button>
+      <ion-title>NEUST CLINIC</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+  <div class="header-container">
+    <ion-img src="assets/icon/NEUST.png/" class="logo"></ion-img>
+    <div class="header-text">
+      <h6>Republic of the Philippines</h6>
+      <h5>Nueva Ecija University of Science and Technology</h5>
+      <h6>Cabanatuan City</h6>
+    </div>
+  </div>
+  <div class="body">
+    <div class="control">
+      <div>
+        <p>________________</p>
+        <p>Control Number</p>
+      </div>
+      <div>
+        <p>________________</p>
+        <p>Date</p>
+      </div>
+    </div>
+    <div>
+      <h5 class="intro">To whom it may concern.</h5>
+      <p class="text-body">This is to certify that this patient ___________, ____ years old, has been seen and examined and was diagnosed to be physically and mentally fit / to have __________, He / She was likewise advised __________,
+        This has been issued for reference purpose.</p>
+    </div>
+    <div class="text-body">
+      <p style="text-align: center;">Margarita Belinda L. Vicencio-Gamilla MD, FPAMS, DPPS</p>
+      <p style="text-align: center;">Medical Officer IV</p>
+      <p style="text-align: center;">License No. 83849</p>
+    </div>
+  </div>
+  <div class="ion-text-center btn-cont">
+    <ion-button color="success" class="download" (click)="success()"><ion-icon name="download-outline"></ion-icon>Print Medical Certificate</ion-button>
+  </div>
 </ion-content>
+
+
+
