@@ -57,10 +57,15 @@
     <ion-input type="date"></ion-input>
   </ion-item>
 
-  <ion-item>
-    <ion-label position="stacked">*Gender</ion-label>
-    <ion-input placeholder="Gender"></ion-input>
-  </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Gender</ion-label>
+      <ion-select interface="popover" placeholder="Gender">
+        <ion-select-option value="male">Male</ion-select-option>
+        <ion-select-option value="female">Female</ion-select-option>
+      </ion-select>
+    </ion-item>
+
 
   <ion-item>
     <ion-label>*Religion</ion-label>
