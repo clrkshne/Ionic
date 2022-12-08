@@ -1,8 +1,40 @@
+<ion-menu contentId="main-content">
+  <ion-header>
+    <ion-toolbar color="primary">
+      <ion-menu-toggle>
+        <ion-button><ion-icon name="close"></ion-icon></ion-button>
+      </ion-menu-toggle>
+      <ion-title></ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding" color="primary">
+    <ion-button expand="full">Profile</ion-button>
+    <ion-button expand="full">Lab Procedures</ion-button>
+    <ion-button expand="full">Treatment Record</ion-button>
+    <ion-button expand="full" (click)="home()">Logout</ion-button>
+    </ion-content>
+</ion-menu>
 <div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar color="primary" class="toolbar1">
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
 
-  <ion-header class="topbar">
-    <ion-icon class="icon" name="menu-outline"></ion-icon>
-    <h1 class="header-text">DASHBOARD</h1>
+      <ion-title class="dashboard1"><b>DASHBOARD</b></ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+<div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar color="primary">
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+
+
+      <ion-title>Reports</ion-title>
+    </ion-toolbar>
   </ion-header>
 
       
