@@ -1,0 +1,33 @@
+table, td, th {
+    border: 1px solid;
+   
+
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #2669e6;
+    color: white;
+    padding-left: 10px;
+  }
+
+  td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+
+  .left {
+    background-color: white;
+    color: black;
+  }
+
+  .download {
+    margin: 40px;
+  }

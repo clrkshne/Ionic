@@ -1,172 +1,190 @@
-<ion-header class="ion-no-border">
-  <ion-toolbar>
-<ion-title>NEUST CLINIC</ion-title>
-<ion-button slot="end">Sign In</ion-button>
-  </ion-toolbar>
-</ion-header>
+<div class="ion-page" id="main-content">
 
-<ion-content>
-  <h1>Sign Up</h1>
-<h1>Personal Information</h1>
-<ion-icon name="person-circle-sharp" color="medium"></ion-icon>
+  <ion-header class="topbar">
+    <ion-icon class="icon" name="menu-outline"></ion-icon>
+    <h1 class="header-text">NEUST CLINIC</h1>
+    <ion-button>Sign In</ion-button>
+  </ion-header>
 
-<form>
-    <label>*Student Number</label>
-    <input>
- 
-    <label>*Username</label>
-    <input>
-
-    <label>*Password</label>
-    <input type="password">
-
-    <label>*Repeat Password</label>
-    <input type="password">
-
-    <label>*First Name</label>
-    <input>
-
-    <label>*Middle Name</label>
-    <input>
- 
-    <label>*Last Name</label>
-    <input>
-
-    <label>*Suffix (Leave empty if not applicable)</label>
-    <input>
+      
+      <ion-content class="ion-padding">
 
 
-  <ion-item>
-    <ion-label position="stacked">*Birthdate</ion-label>
-    <input type="date" value="dd/mm/yyyy">
-  </ion-item>
+       
+
+         <ion-list>
+          <h1 class="ion-text-center">Sign Up</h1>
+          <h2 class="ion-text-center">Personal Information</h2>
+
+          <div class="d-flex flex-column">
+            <div class="img-div">
+              <img class="circle-pic" src="assets/icon/placeholder.jpg"/>
+              <img class="camera-icon" src="assets/icon/icon-camera.png"/>
+            </div>
+         </div>
+
+          <form>
+            
+          <label>* Student Number</label>
+          <input>
 
 
-    <ion-item>
-      <label for="gender">*Gender</label>
-      <select name="gender" id="gender">
-        <option value="gender">Gender</option>
-        <option value="male">Male</option>
-        <option value="female">Female</option>
-      </select>
-    </ion-item>
-
-    <ion-item>
-      <label for="religion">*Religion</label>
-      <select name="religion" id="religion">
-        <option value="religion">Religion</option>
-        <option value="catholic">Roman Catholic</option>
-        <option value="inc">Iglesia ni Cristo</option>
-        <option value="islam">Islam</option>
-        <option value="jwit">Jehovah's Witnesses</option>
-        <option value="bap">Bible Baptist Church</option>
-        <option value="mor">Mormon</option>
-        <option value="born">Born Again</option>
-      </select>
-    </ion-item>
-
-    <ion-item>
-      <label for="course">*Course</label>
-      <select name="course" id="course">
-        <option value="course">Course</option>
-        <option value="bsit">BSIT</option>
-        <option value="bsed">BSED</option>
-        <option value="bse">BSE</option>
-        <option value="bsa">BSA</option>
-      </select>
-    </ion-item>
-
-    <ion-item>
-      <label for="yearlevel">*Year Level</label>
-      <select name="yearlevel" id="yearlevel">
-        <option value="course">Year Level</option>
-        <option value="bsit">1st</option>
-        <option value="bsed">2nd</option>
-        <option value="bse">3rd</option>
-        <option value="bsa">4th</option>
-      </select>
-    </ion-item>
-
-    <label>*Schoolyear</label>
-    <input>
-
-    <h1>Contact</h1>
-
-    <label>*Contact</label>
-    <input>
-
-    <label>*Email</label>
-    <input>
-
-    <label>*Cellphone Number (Parents/Guardians)</label>
-    <input>
-
-    <h1>Family</h1>
-
-    <label>*Father</label>
-    <input>
-
-    <label>*Occupation</label>
-    <input>
-    
-    <label>*Mother</label>
-    <input>
-
-    <label>*Occupation</label>
-    <input>
-
-    <h1>Address</h1>
-
-    <label>*House Number</label>
-    <input>
-
-    <label>*Street</label>
-    <input>
-
-    <label>*City/Municipality</label>
-    <input>
-
-    <label>*Province</label>
-    <input>
-
+          <label>* Username</label>
+          <input>
     
 
-    <h1>Additional Information</h1>
-    <h2>(Leave empty if not applicable.)</h2>
+          <label>* Password</label>
+          <input type="password">
+        
 
-    <label>*Height (cm)</label>
-    <input>
-
-    <label>*Weight (kg)</label>
-    <input>
+          <label>* Repeat Password</label>
+          <input type="password">
 
 
+          <label>* First Name</label>
+          <input>
+    
+       
+          <label>* Middle Name</label>
+          <input>
+          
+        
+          <label>* Last Name</label>
+          <input>
+    
+
+       
+          <label>* Suffix (Leave empty if not applicable.)</label>
+          <input>
+
+        
+          <label>* Birthdate</label>
+          <input type="date" value="dd/mm/yyyy">
+         
+    
+            <label for="gender">* Gender</label>
+            <select name="gender" id="gender">
+              <option value="gender">Gender</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+
+
+            <label for="religion">* Religion</label>
+            <select name="religion" id="religion">
+              <option value="religion">Religion</option>
+              <option value="catholic">Roman Catholic</option>
+              <option value="inc">Iglesia ni Cristo</option>
+              <option value="islam">Islam</option>
+              <option value="jwit">Jehovah's Witnesses</option>
+              <option value="bap">Bible Baptist Church</option>
+              <option value="mor">Mormon</option>
+              <option value="born">Born Again</option>
+            </select>
+    
+       
+            <label for="course">* Course</label>
+            <select name="course" id="course">
+              <option value="course">Course</option>
+              <option value="bsit">BSIT</option>
+              <option value="bsed">BSED</option>
+              <option value="bse">BSE</option>
+              <option value="bsa">BSA</option>
+            </select>
+
+
+            <label for="yearlevel">* Year Level</label>
+            <select name="yearlevel" id="yearlevel">
+              <option value="yearlevel">Year Level</option>
+              <option value="bsa">1st</option>
+              <option value="bsit">2nd</option>
+              <option value="bsed">3rd</option>
+              <option value="bse">4th</option>
+            </select>
+
+            <label>* Schoolyear</label>
+            <input>
   
-    <h1>If you have chronic illnesses (Diabetes, Seizures, Asthma) please give details:</h1>
+            <h1>Contact</h1>
 
-    <label>*Illness</label>
-    <input>
+            <label>* Contact</label>
+            <input>
+        
+            <label>* Email</label>
+            <input>
+        
+            <label>* Cellphone Number (Parents/Guardians)</label>
+            <input>
+        
+            <h1>Family</h1>
+        
+            <label>* Father</label>
+            <input>
+        
+            <label>* Occupation</label>
+            <input>
+            
+            <label>* Mother</label>
+            <input>
+        
+            <label>* Occupation</label>
+            <input>
+        
+            <h1>Address</h1>
+        
+            <label>* House Number</label>
+            <input>
+        
+            <label>* Street</label>
+            <input>
+        
+            <label>* City/Municipality</label>
+            <input>
+        
+            <label>* Province</label>
+            <input>
 
-    <label>*Age at Diagnosis</label>
-    <input>
+  <h2>Additional Information</h2>
+ <h3>(Leave empty if not applicable.)</h3>
 
-    <label>*Present Medication and Schedule: (Kasalukuyang iniinom na mga gamot)</label>
-    <input>
+  <label>Height (cm)</label>
+  <input>
 
-    <label>*Doctor's Name</label>
-    <input>
-
-    <label>*Clinic Address</label>
-    <input>
-
-    <label>*Telephone Number</label>
-    <input>
-
+  <label>Weight (kg)</label>
+  <input>
+    
 
  
-  </form>
-  <ion-button (click)="success()">Sign Up</ion-button>
+   
+        <label class="ion-text-wrap">If you have chronic illnesses (Diabetes, Seizures, Asthma) please give details:</label>
+
+  <label>Illness</label>
+  <input>
+
+  <label>Age at Diagnosis</label>
+  <input>
+
+  <label>Present Medication and Schedule: (Kasalukuyang iniinom na mga gamot)</label>
+  <textarea></textarea>
+
+  <label>Doctor's Name</label>
+  <input>
+   
+  <label>Clinic Address</label>
+  <input>
+
+  <label>Telephone Number</label>
+  <input>
+        
+
+
+  <div class="ion-text-center">
+      <ion-button class="signup" (click)="success()"><b>Sign Up</b></ion-button>
+
+
+      </div>
+    </form>
 
 
 
-</ion-content>
+
