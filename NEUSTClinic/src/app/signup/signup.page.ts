@@ -23,7 +23,7 @@ export class SignupPage implements OnInit {
       message: "You have successfully signed up! Please wait for your approval by the administrator.",
       duration: 3000,
       color: "success",
-      position: 'bottom',
+      position: 'middle',
 
   });
     toast.present();

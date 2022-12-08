@@ -1,3 +1,107 @@
-ion-icon {
-    font-size: 200px;
-}
+
+.topbar {
+    height: 5rem;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .header-text {
+    color: rgb(0, 0, 0);
+    transform: translateY(-2px);
+    font-weight: 700;
+  }
+  
+  .icon {
+    color: white;
+    font-size: 2.3rem;
+    font-weight: 700;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  
+  .circle-pic{
+     width:150px;
+     height:150px;
+     -webkit-border-radius: 50%;
+     border-radius: 50%;
+  
+  }
+  
+  .camera-icon{
+      width:50px;
+      height:50px;
+      -webkit-border-radius: 50%;
+      border-radius: 50%;
+      position: relative;
+      bottom: 50px;
+      left: 155px;
+      transform: translateX(-50px);
+   }
+  
+   .img-div {
+    width: 160px;
+    height: 160px;
+    margin: .5rem auto;
+   }
+  
+   .upload-btn {
+    width: 100px;
+    height: 40px;
+    margin: 0 auto;
+   }
+  
+  
+   .btn-container{
+    width: 160px;
+    margin: 1rem auto;
+    display: flex;
+   }
+  
+   ion-list {
+    padding: 0 1rem 0 0;
+   }
+  
+   ion-list > h1 {
+    padding-left: 1rem;
+   }
+  
+   form {
+    margin: 20px;
+    width: 300px
+   }
+   
+   form label {
+    display: flex;
+    margin-top: 20px;
+    font-size: 15px;
+    margin-bottom: 10px;
+  
+   }
+  
+   form input {
+    border: 1px solid;
+    border-color: #dcdcdc;
+    border-radius: 5px;
+    width: 281px;
+    height:35px;
+  
+   }
+  
+   form select {
+    width: 281px;
+    height: 35px;
+   }
+  
+   textarea {
+    width: 281px;
+   }
+
+   .signup {
+    width: 290px;
+    height: 50px;
+    padding-right: 19px;
+    margin-top: 10px;
+
+   }
+   
