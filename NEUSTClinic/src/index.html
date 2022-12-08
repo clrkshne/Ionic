@@ -63,11 +63,11 @@
       google.charts.setOnLoadCallback(drawChart);
       function drawChart() {
         var data = google.visualization.arrayToDataTable([
-          ["Element", "Density", { role: "style" } ],
-          ["Copper", 8.94, "#b87333"],
-          ["Silver", 10.49, "silver"],
-          ["Gold", 19.30, "gold"],
-          ["Platinum", 21.45, "color: #e5e4e2"]
+          ["Year Level", "Vaccinated", { role: "style" } ],
+          ["1st Year", 33, "#b87333"],
+          ["2nd Year", 52, "silver"],
+          ["3rd Year", 43, "gold"],
+          ["4th Year", 54, "color: lightblue"]
         ]);
 
         var view = new google.visualization.DataView(data);
@@ -85,6 +85,54 @@
         var chart = new google.visualization.ColumnChart(document.getElementById("barchart"));
         chart.draw(view, options);
     }
+    </script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Disease', 'Cases'],
+          ['HEENT',  300],
+          ['LRTI',  110],
+          ['URTI',  660],
+          ['Gastritis',  1080],
+          ['Diabetes',  1630]
+        ]);
+
+        var options = {
+          title: 'Cases This Month',
+          legend: { position: 'none' }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('linechart1'));
+
+        chart.draw(data, options);
+      }
+    </script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+        ['Disease', 'Cases'],
+          ['HEENT',  1000],
+          ['LRTI',  1170],
+          ['URTI',  660],
+          ['Gastritis',  1030],
+          ['Diabetes',  1030]
+        ]);
+
+        var options = {
+          title: 'Cases This Year',
+          legend: { position: 'none' }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('linechart2'));
+
+        chart.draw(data, options);
+      }
     </script>
 </head>
 
