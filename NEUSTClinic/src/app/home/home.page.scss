@@ -4,6 +4,13 @@
   box-sizing: border-box;
 }
 
+.header-container {
+  display: flex;
+  height: 3rem;
+  padding: 1rem 0;
+  align-items: center;
+}
+
 .topbar {
   background-color: inherit;
   font-size: 24px;
@@ -12,21 +19,27 @@
 .header {
   display: flex;
   flex-direction: column;
+  padding: 0 1rem;
+  border-bottom: 1px solid #e6e6e6;
+  margin: 0 1rem;
+  margin-top: 3rem;
 }
 
 .logo {
-  width: 130px;
-  aspect-ratio: 1;
-  margin: 3rem auto 2rem auto;
+  width: 30px;
+  height: 30px;
+  margin: 0 1rem;
 }
 
 .header-text {
-  margin: 0 auto;
+  margin: 3rem auto 2rem auto;
+  font-size: 1.8rem;
 }
 
 .fields {
   display: flex;
   flex-direction: column;
+  margin-top: 1rem;
 }
 
 .field {
@@ -53,17 +66,28 @@
   padding-left: 1rem;
 }
 
-.forgot-password {
-  padding-left: 1rem;
-}
-
 .button-container {
   display: flex;
   flex-direction: column;
+  margin-top: 2rem;
 }
 
-.signin,
-.signup1 {
-  width: 250px;
+.signin {
+  width: 80%;
   margin: .5rem auto;
+}
+
+.signup1 {
+  margin-left: 3rem;
+  height: 2rem;
+  width: 5rem;
+}
+
+ion-list > .field {
+  width: 90%;
+  margin: 2rem auto;
+}
+
+.forgot-password {
+  color: #0275d8;
 }
