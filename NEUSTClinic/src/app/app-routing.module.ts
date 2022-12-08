@@ -43,6 +43,26 @@ const routes: Routes = [
     path: 'profile',
     loadChildren: () => import('./profile/profile.module').then( m => m.ProfilePageModule)
   },
+  {
+    path: 'profile2',
+    loadChildren: () => import('./profile2/profile2.module').then( m => m.Profile2PageModule)
+  },
+  {
+    path: 'profile3',
+    loadChildren: () => import('./profile3/profile3.module').then( m => m.Profile3PageModule)
+  },
+  {
+    path: 'profile4',
+    loadChildren: () => import('./profile4/profile4.module').then( m => m.Profile4PageModule)
+  },
+  {
+    path: 'profile5',
+    loadChildren: () => import('./profile5/profile5.module').then( m => m.Profile5PageModule)
+  },
+  {
+    path: 'profile6',
+    loadChildren: () => import('./profile6/profile6.module').then( m => m.Profile6PageModule)
+  },
 ];
 
 @NgModule({

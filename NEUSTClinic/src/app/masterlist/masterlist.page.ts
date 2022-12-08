@@ -31,4 +31,29 @@ export class MasterlistPage implements OnInit {
   {
     this.router.navigate(['adminsignin'])
   }
+  profile()
+  {
+    this.router.navigate(['profile'])
+  }
+  profile2()
+  {
+    this.router.navigate(['profile2'])
+  }
+  profile3()
+  {
+    this.router.navigate(['profile3'])
+  }
+  profile4()
+  {
+    this.router.navigate(['profile4'])
+  }
+  profile5()
+  {
+    this.router.navigate(['profile5'])
+  }
+  profile6()
+  {
+    this.router.navigate(['profile6'])
+  }
+  
 }
