@@ -5,7 +5,7 @@
    height:150px;
    -webkit-border-radius: 50%;
    border-radius: 50%;
- 
+
 }
 
 .camera-icon{
@@ -13,6 +13,36 @@
     height:50px;
     -webkit-border-radius: 50%;
     border-radius: 50%;
-  
+    position: relative;
+    bottom: 50px;
+    left: 155px;
+    transform: translateX(-50px);
+ }
+
+ .img-div {
+  width: 160px;
+  height: 160px;
+  margin: .5rem auto;
+ }
+
+ .upload-btn {
+  width: 100px;
+  height: 40px;
+  margin: 0 auto;
+ }
+
+
+ .btn-container{
+  width: 160px;
+  margin: 1rem auto;
+  display: flex;
+ }
+
+ ion-list {
+  padding: 0 1rem 0 0;
+ }
+
+ ion-list > h1 {
+  padding-left: 1rem;
  }
 
