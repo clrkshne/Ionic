@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { ToastController } from '@ionic/angular';
 
 @Component({
   selector: 'app-verification',
@@ -8,7 +9,7 @@ import { Router } from '@angular/router';
 })
 export class VerificationPage implements OnInit {
 
-  constructor(private router:Router) { }
+  constructor(private router:Router, private ToastController:ToastController) { }
 
   ngOnInit() {
   }
@@ -31,5 +32,27 @@ export class VerificationPage implements OnInit {
   adminsignin()
   {
     this.router.navigate(['adminsignin'])
+  }
+  async success()
+  {
+    const toast = await this.ToastController.create({
+      message: "Registration approved!",
+      duration: 3000,
+      color: "success",
+      position: 'top',
+
+  });
+    toast.present();
+  }
+  async success2()
+  {
+    const toast = await this.ToastController.create({
+      message: "Registration denied!",
+      duration: 3000,
+      color: "danger",
+      position: 'top',
+
+  });
+    toast.present();
   }
 }

@@ -20,10 +20,10 @@ export class SignupPage implements OnInit {
   async success()
   {
     const toast = await this.ToastController.create({
-      message: "You have successfully signed up! Please wait for your approval by the administrator.",
+      message: "You have successfully signed up!",
       duration: 3000,
       color: "success",
-      position: 'middle',
+      position: 'top',
 
   });
     toast.present();

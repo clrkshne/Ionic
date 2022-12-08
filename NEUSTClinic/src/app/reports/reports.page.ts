@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { ToastController } from '@ionic/angular';
 @Component({
   selector: 'app-reports',
   templateUrl: './reports.page.html',
@@ -7,7 +8,7 @@ import { Router } from '@angular/router';
 })
 export class ReportsPage implements OnInit {
 
-  constructor(private router:Router) { }
+  constructor(private router:Router, private ToastController:ToastController) { }
 
   ngOnInit() {
   }
@@ -30,5 +31,16 @@ export class ReportsPage implements OnInit {
   adminsignin()
   {
     this.router.navigate(['adminsignin'])
+  }
+  async success()
+  {
+    const toast = await this.ToastController.create({
+      message: "Download Successful",
+      duration: 3000,
+      color: "success",
+      position: 'top',
+
+  });
+    toast.present();
   }
 }
