@@ -1,4 +1,25 @@
 
+.topbar {
+  height: 5rem;
+  background-color: #0275d8;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header-text {
+  color: white;
+  transform: translateY(-2px);
+  font-weight: 700;
+}
+
+.icon {
+  color: white;
+  font-size: 2.3rem;
+  font-weight: 700;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
 
 .circle-pic{
    width:150px;
