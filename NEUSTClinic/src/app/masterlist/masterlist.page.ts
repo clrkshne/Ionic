@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { ToastController } from '@ionic/angular';
+
 @Component({
   selector: 'app-masterlist',
   templateUrl: './masterlist.page.html',
@@ -7,7 +9,7 @@ import { Router } from '@angular/router';
 })
 export class MasterlistPage implements OnInit {
 
-  constructor(private router:Router) { }
+  constructor(private router:Router, private ToastController:ToastController) { }
 
   ngOnInit() {
   }
@@ -55,5 +57,15 @@ export class MasterlistPage implements OnInit {
   {
     this.router.navigate(['profile6'])
   }
-  
+  async danger()
+  {
+    const toast = await this.ToastController.create({
+      message: "User deleted successfully",
+      duration: 3000,
+      color: "danger",
+      position: 'top',
+
+  });
+    toast.present();
+  }
 }
