@@ -22,7 +22,7 @@ export class Profile3Page implements OnInit {
       message: "User update successfully",
       duration: 3000,
       color: "success",
-      position: 'top',
+      position: 'bottom',
 
   });
     toast.present();

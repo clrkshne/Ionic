@@ -47,7 +47,7 @@
               <img class="camera-icon" src="assets/icon/icon-camera.png"/>
             </div>
             <div class="btn-container">
-              <ion-button shape="round" class="upload-btn">Upload</ion-button>
+              <ion-button shape="round" class="upload-btn" (click)="update()">Upload</ion-button>
             </div>
          </div>
 
@@ -198,15 +198,15 @@
   <label>Telephone Number</label>
   <input value="N/A">
         
-
+  <br>
+<br>
 
   <div class="ion-text-center">
-      <ion-button shape="round">Update</ion-button>
+      <ion-button shape="round" (click)="update()">Update</ion-button>
       <h2>Family History</h2>
       <table id="customers">
 
-    
-      
+  
         <thead>
           <tr>
             <th>Disease</th>
@@ -327,15 +327,14 @@
            
           </tr>
 
-          <h2>Personal Health History</h2>
+         
         </tbody>
       </table>
 
-
+      <h2>Personal Health History</h2>
       <table id="customers">
 
     
-      
         <thead>
           <tr>
             <th>Disease</th>
@@ -623,9 +622,11 @@
           </td>
            
           </tr>
-          <h2>Immunization History</h2>
+
         </tbody>
       </table>
+          <h2>Immunization History</h2>
+     
 
       </div>
     </form>
@@ -738,8 +739,9 @@
             </ion-radio-group>
         </td>
          
-        </tr>
-  
+        </tr>   </tbody>
+      </table>
+        <br>
         <table id="customers">
 
         
@@ -821,6 +823,55 @@
                 </ion-radio-group>
             </td>
              
+        
             </tr>
+          </table>
+          <br>
+      
+
+          <h2>Lab Procedures</h2>
+          <table id="customers">
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Pathologist</th>
+                <th>Laboratory Test</th>
+                <th>Result</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>07-05-2022</td>
+                <td>Dr. Rivera</td>
+                <td>Drug Test</td>
+                <td>Negative</td>
+              </tr>
+             
+            </tbody>
+          </table>
+        
+       
+          <h2>Treatment Record</h2>
+          <table id="customers">
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Time in</th>
+                <th>Chief Complaint</th>
+                <th>Diagnosis</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>11/9/2022</td>
+                <td>1:15pm</td>
+                <td>Back Pain</td>
+                <td>Rest</td>
+              </tr>
+             
+            </tbody>
+          </table>
+
+            
     
-         <ion-button shape="round">Update</ion-button>
+    

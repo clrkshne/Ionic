@@ -63,7 +63,7 @@ export class MasterlistPage implements OnInit {
       message: "User deleted successfully",
       duration: 3000,
       color: "danger",
-      position: 'top',
+      position: 'bottom',
 
   });
     toast.present();

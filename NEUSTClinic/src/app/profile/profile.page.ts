@@ -23,10 +23,11 @@ export class ProfilePage implements OnInit {
     const toast = await this.ToastController.create({
       message: "User update successfully",
       duration: 3000,
-      color: "danger",
-      position: 'top',
+      color: "success",
+      position: 'bottom',
 
   });
     toast.present();
   }
+  
 }

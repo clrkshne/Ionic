@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { ToastController } from '@ionic/angular';
 
 @Component({
   selector: 'app-signin',
@@ -10,7 +11,7 @@ export class SigninPage implements OnInit {
   handlerMessage = '';
   roleMessage = '';
 
-  constructor (private router:Router) { }
+  constructor (private router:Router, private ToastController:ToastController) { }
 
   ngOnInit() {
   }
@@ -18,4 +19,16 @@ export class SigninPage implements OnInit {
   {
    this.router.navigate(['home'])
   }
+  async update()
+  {
+    const toast = await this.ToastController.create({
+      message: "Updated Successfully",
+      duration: 3000,
+      color: "success",
+      position:'bottom',
+
+  });
+    toast.present();
+  }
+  
 }

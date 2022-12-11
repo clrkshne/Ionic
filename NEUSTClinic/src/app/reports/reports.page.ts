@@ -38,7 +38,7 @@ export class ReportsPage implements OnInit {
       message: "Download Successful",
       duration: 3000,
       color: "success",
-      position: 'top',
+      position: 'bottom',
 
   });
     toast.present();

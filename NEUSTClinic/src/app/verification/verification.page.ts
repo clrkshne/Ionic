@@ -39,7 +39,7 @@ export class VerificationPage implements OnInit {
       message: "Registration approved!",
       duration: 3000,
       color: "success",
-      position: 'top',
+      position: 'bottom',
 
   });
     toast.present();
@@ -50,7 +50,7 @@ export class VerificationPage implements OnInit {
       message: "Registration denied!",
       duration: 3000,
       color: "danger",
-      position: 'top',
+      position: 'bottom',
 
   });
     toast.present();
